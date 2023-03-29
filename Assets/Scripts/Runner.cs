@@ -7,8 +7,10 @@ public class Runner : MonoBehaviour {
     public enum PowerState { LIGHTMAN, SINGULARITYMAN, GLITCHMAN, MYSTICMAN };
 
     private PowerState currentPower = PowerState.LIGHTMAN;
+    private int currentLane = 0;
 
     private SpriteRenderer sprite;
+    [SerializeField] private Transform lanes;
 
     private void Awake() {
         sprite = GetComponent<SpriteRenderer>();
@@ -39,7 +41,25 @@ public class Runner : MonoBehaviour {
         }
     }
 
+    public void ChangeLane(int lane) {
+        if (currentLane != lane) {
+            if (lane == -1) {
+                transform.position = lanes.GetChild(0).position;
+
+            } else if (lane == 0) {
+                transform.position = lanes.GetChild(1).position;
+
+            } else if (lane == 1) {
+                transform.position = lanes.GetChild(2).position;
+            }
+
+            currentLane = lane;
+        }
+    }
+
+    // delete this later
     private void Update() {
+        // Power backup for PC
         if (Input.GetKeyDown(KeyCode.I)) {
             ChangePowerState(PowerState.LIGHTMAN);
 
@@ -52,6 +72,15 @@ public class Runner : MonoBehaviour {
         } else if (Input.GetKeyDown(KeyCode.K)) {
             ChangePowerState(PowerState.MYSTICMAN);
 
+            // Movement backup for PC
+        } else if (Input.GetKeyDown(KeyCode.W)) {
+            ChangeLane(-1);
+
+        } else if (Input.GetKeyDown(KeyCode.S)) {
+            ChangeLane(0);
+
+        } else if (Input.GetKeyDown(KeyCode.X)) {
+            ChangeLane(1);
         }
     }
 
