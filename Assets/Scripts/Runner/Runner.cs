@@ -84,4 +84,6 @@ public class Runner : MonoBehaviour {
         }
     }
 
+    public PowerState GetPowerState() { return currentPower; }
+
 }
