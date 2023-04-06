@@ -4,7 +4,6 @@ using TMPro;
 using UnityEngine;
 
 public class ScoreUI : MonoBehaviour {
-    [SerializeField] private Road road;
     private TMP_Text text;
 
     private void Awake() {
@@ -12,6 +11,6 @@ public class ScoreUI : MonoBehaviour {
     }
 
     private void Update() {
-        text.text = road.getDistanceTravelled().ToString("0.00");
+        text.text = Road.GetDistanceTravelled().ToString("0.00");
     }
 }
