@@ -7,7 +7,7 @@ public class Movable : MonoBehaviour {
     protected float dOnRoad;
     protected Vector2 pAtBirth;
 
-    protected void Awake() {
+    protected void Start() {
         dOnRoad = Road.GetDistanceTravelled();
         pAtBirth = transform.position;
     }
