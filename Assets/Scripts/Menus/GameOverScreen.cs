@@ -11,8 +11,7 @@ public class GameOverScreen : MonoBehaviour {
     }
 
     public void OnReplayPressed() {
-        // change it to 1 later
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(1);
         Time.timeScale = 1;
     }
 
