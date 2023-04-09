@@ -6,6 +6,7 @@ using UnityEngine;
 public class MilestoneSpawner : MonoBehaviour {
 
     [SerializeField] private GameObject Milestone;
+    [SerializeField] private GameObject Milestone100;
 
     private int nextMilestone = 20;
 
@@ -17,7 +18,14 @@ public class MilestoneSpawner : MonoBehaviour {
     }
 
     private void SpawnMilestone(int i) {
-        GameObject milestone = Instantiate(Milestone, transform);
+        GameObject milestone;
+
+        if (i % 100 != 0) {
+            milestone = Instantiate(Milestone, transform);
+        } else {
+            milestone = Instantiate(Milestone100, transform);
+        }
+
         milestone.GetComponentInChildren<TMP_Text>().text = i.ToString();
     }
 
