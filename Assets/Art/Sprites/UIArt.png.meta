@@ -117,7 +117,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: UIArt_0
+      name: UIArt_Square
       rect:
         serializedVersion: 2
         x: 0
@@ -138,7 +138,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UIArt_1
+      name: UIArt_RoundedSquare
       rect:
         serializedVersion: 2
         x: 100
@@ -159,7 +159,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UIArt_2
+      name: UIArt_Arrow
       rect:
         serializedVersion: 2
         x: 0
@@ -180,7 +180,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UIArt_3
+      name: UIArt_Button
       rect:
         serializedVersion: 2
         x: 100
@@ -201,7 +201,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UIArt_4
+      name: UIArt_Panel
       rect:
         serializedVersion: 2
         x: 0
@@ -209,7 +209,7 @@ TextureImporter:
         width: 100
         height: 100
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 15, y: 15, z: 15, w: 15}
       outline: []
       physicsShape: []
@@ -217,6 +217,90 @@ TextureImporter:
       bones: []
       spriteID: cb59414362bda0843a590f3cd39c7a5e
       internalID: -405176912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UIArt_Pause
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 262
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10dedee78ad988548a831d1034e1089a
+      internalID: 1290829302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UIArt_Play
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 262
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2351b03ea017e8d408303b7f8a331915
+      internalID: 1885737384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UIArt_SoundOn
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 212
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f1ceacbb29b9c8489b54e50cbcd1070
+      internalID: 1203946317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UIArt_SoundOff
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 212
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09330a39af7939d4f9ef5d8bb97a7643
+      internalID: -193739006
       vertices: []
       indices: 
       edges: []
@@ -232,11 +316,15 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      UIArt_1: -1801987334
-      UIArt_2: -633651028
-      UIArt_0: -660552052
-      UIArt_3: 2097085468
-      UIArt_4: -405176912
+      UIArt_Panel: -405176912
+      UIArt_RoundedSquare: -1801987334
+      UIArt_Pause: 1290829302
+      UIArt_Square: -660552052
+      UIArt_SoundOn: 1203946317
+      UIArt_Play: 1885737384
+      UIArt_SoundOff: -193739006
+      UIArt_Button: 2097085468
+      UIArt_Arrow: -633651028
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
