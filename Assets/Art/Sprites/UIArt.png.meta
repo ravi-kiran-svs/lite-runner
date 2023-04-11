@@ -228,9 +228,9 @@ TextureImporter:
         x: 100
         y: 262
         width: 50
-        height: 50
+        height: 49
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -251,7 +251,7 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -272,7 +272,7 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -293,7 +293,7 @@ TextureImporter:
         width: 50
         height: 50
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -301,6 +301,27 @@ TextureImporter:
       bones: []
       spriteID: 09330a39af7939d4f9ef5d8bb97a7643
       internalID: -193739006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UIArt_Replay
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 162
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9f9416edc0bcd2448b548b926cc1e37
+      internalID: 259990601
       vertices: []
       indices: 
       edges: []
@@ -320,6 +341,7 @@ TextureImporter:
       UIArt_RoundedSquare: -1801987334
       UIArt_Pause: 1290829302
       UIArt_Square: -660552052
+      UIArt_Replay: 259990601
       UIArt_SoundOn: 1203946317
       UIArt_Play: 1885737384
       UIArt_SoundOff: -193739006
