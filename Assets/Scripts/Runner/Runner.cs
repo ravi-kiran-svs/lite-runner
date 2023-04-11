@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Runner : MonoBehaviour {
 
-    public enum PowerState { LIGHTMAN, SINGULARITYMAN, GLITCHMAN, MYSTICMAN };
+    public enum PowerState { LIGHTMAN, SINGULARITYMAN, GLITCHMAN, MYSTICMAN, NONE };
 
     private PowerState currentPower = PowerState.LIGHTMAN;
     private int currentLane = 0;

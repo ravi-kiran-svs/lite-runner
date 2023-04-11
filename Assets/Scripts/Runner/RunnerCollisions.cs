@@ -5,6 +5,9 @@ using UnityEngine.Events;
 
 public class RunnerCollisions : MonoBehaviour {
 
+    // only for testing
+    [SerializeField] private bool isImmortal = false;
+
     public UnityEvent RunnerDead;
 
     private Runner runner;
@@ -14,8 +17,10 @@ public class RunnerCollisions : MonoBehaviour {
     }
 
     private void OnTriggerEnter2D(Collider2D collider) {
-        if (collider.GetComponent<Obstacle>().GetObsType() != runner.GetPowerState()) {
-            RunnerDead.Invoke();
+        if (!isImmortal) {
+            if (collider.GetComponent<Obstacle>().GetObsType() != runner.GetPowerState()) {
+                RunnerDead.Invoke();
+            }
         }
     }
 
