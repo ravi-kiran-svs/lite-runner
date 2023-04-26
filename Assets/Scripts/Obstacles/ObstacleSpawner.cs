@@ -5,6 +5,7 @@ using UnityEngine;
 public class ObstacleSpawner : MonoBehaviour {
 
     [SerializeField] private GameObject[] Obs;
+    [SerializeField] private GameObject NoneObs;
 
     private int nextObsSpawn = 20;
 
@@ -16,9 +17,15 @@ public class ObstacleSpawner : MonoBehaviour {
     }
 
     private void SpawnObsLine() {
+        int obsPos = Random.Range(0, 3);
+
         for (int i = 0; i < 3; i++) {
-            int obsType = Random.Range(0, 4);
-            Instantiate(Obs[obsType], transform.GetChild(i));
+            if (i == obsPos) {
+                Instantiate(Obs[Random.Range(0, 4)], transform.GetChild(i));
+
+            } else {
+                Instantiate(NoneObs, transform.GetChild(i));
+            }
         }
     }
 
