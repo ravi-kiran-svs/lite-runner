@@ -5,6 +5,9 @@
     "m_Properties": [
         {
             "m_Id": "66ba3daf549748549e7cb9156ca00f48"
+        },
+        {
+            "m_Id": "54fd558ac88148fab1b6976160bfb355"
         }
     ],
     "m_Keywords": [],
@@ -56,6 +59,9 @@
         },
         {
             "m_Id": "c10b4043ca754ca8a0fce1238b68877f"
+        },
+        {
+            "m_Id": "ac4243ddda8749238b1ea4f7ff7bea50"
         }
     ],
     "m_GroupDatas": [],
@@ -134,6 +140,20 @@
         {
             "m_OutputSlot": {
                 "m_Node": {
+                    "m_Id": "ac4243ddda8749238b1ea4f7ff7bea50"
+                },
+                "m_SlotId": 0
+            },
+            "m_InputSlot": {
+                "m_Node": {
+                    "m_Id": "437ffe9b36a24ab8b46937ae531acda1"
+                },
+                "m_SlotId": 0
+            }
+        },
+        {
+            "m_OutputSlot": {
+                "m_Node": {
                     "m_Id": "b5ca4d1bd32d4093acd820aacaf435c5"
                 },
                 "m_SlotId": 0
@@ -155,20 +175,6 @@
             "m_InputSlot": {
                 "m_Node": {
                     "m_Id": "7710098ff7db4fe2aa3ee7bc7368598f"
-                },
-                "m_SlotId": 0
-            }
-        },
-        {
-            "m_OutputSlot": {
-                "m_Node": {
-                    "m_Id": "c10b4043ca754ca8a0fce1238b68877f"
-                },
-                "m_SlotId": 2
-            },
-            "m_InputSlot": {
-                "m_Node": {
-                    "m_Id": "437ffe9b36a24ab8b46937ae531acda1"
                 },
                 "m_SlotId": 0
             }
@@ -681,6 +687,33 @@
 }
 
 {
+    "m_SGVersion": 1,
+    "m_Type": "UnityEditor.ShaderGraph.Internal.Vector1ShaderProperty",
+    "m_ObjectId": "54fd558ac88148fab1b6976160bfb355",
+    "m_Guid": {
+        "m_GuidSerialized": "415282b5-df75-40a1-bbe8-bdaae488fbb5"
+    },
+    "m_Name": "Distance",
+    "m_DefaultRefNameVersion": 1,
+    "m_RefNameGeneratedByDisplayName": "Distance",
+    "m_DefaultReferenceName": "_Distance",
+    "m_OverrideReferenceName": "",
+    "m_GeneratePropertyBlock": true,
+    "m_UseCustomSlotLabel": false,
+    "m_CustomSlotLabel": "",
+    "m_Precision": 0,
+    "overrideHLSLDeclaration": false,
+    "hlslDeclarationOverride": 0,
+    "m_Hidden": false,
+    "m_Value": 0.0,
+    "m_FloatType": 0,
+    "m_RangeValues": {
+        "x": 0.0,
+        "y": 1.0
+    }
+}
+
+{
     "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.BlockNode",
     "m_ObjectId": "5d4f8227698945a0b93a033d33ed5e4a",
@@ -735,6 +768,21 @@
     },
     "m_Labels": [],
     "m_Space": 0
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
+    "m_ObjectId": "65a06ba011b1497b864929be1509c631",
+    "m_Id": 0,
+    "m_DisplayName": "Distance",
+    "m_SlotType": 1,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "Out",
+    "m_StageCapability": 3,
+    "m_Value": 0.0,
+    "m_DefaultValue": 0.0,
+    "m_Labels": []
 }
 
 {
@@ -1149,8 +1197,46 @@
     "m_ChildObjectList": [
         {
             "m_Id": "66ba3daf549748549e7cb9156ca00f48"
+        },
+        {
+            "m_Id": "54fd558ac88148fab1b6976160bfb355"
         }
     ]
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.PropertyNode",
+    "m_ObjectId": "ac4243ddda8749238b1ea4f7ff7bea50",
+    "m_Group": {
+        "m_Id": ""
+    },
+    "m_Name": "Property",
+    "m_DrawState": {
+        "m_Expanded": true,
+        "m_Position": {
+            "serializedVersion": "2",
+            "x": -583.2000122070313,
+            "y": 95.20000457763672,
+            "width": 121.5999755859375,
+            "height": 33.600013732910159
+        }
+    },
+    "m_Slots": [
+        {
+            "m_Id": "65a06ba011b1497b864929be1509c631"
+        }
+    ],
+    "synonyms": [],
+    "m_Precision": 0,
+    "m_PreviewExpanded": true,
+    "m_PreviewMode": 0,
+    "m_CustomColors": {
+        "m_SerializableColors": []
+    },
+    "m_Property": {
+        "m_Id": "54fd558ac88148fab1b6976160bfb355"
+    }
 }
 
 {

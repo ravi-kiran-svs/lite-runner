@@ -4,12 +4,21 @@ using UnityEngine;
 
 public class Floor : Movable {
 
-    private void Update() {
-        base.Update();
+    [SerializeField] Transform rainbowRoad;
 
-        Vector2 p = transform.position;
-        p.x = ((p.x + 5) % 10 + 10) % 10 - 5;
-        transform.position = p;
+    private void Update() {
+        float dByRoad = Road.GetDistanceTravelled() - dOnRoad;
+
+        float distance = dByRoad - pAtBirth.x;
+
+        SetMaterialsDistance(distance);
+    }
+
+    private void SetMaterialsDistance(float d) {
+        for (int i = 0; i < rainbowRoad.childCount; i++) {
+            float delta = 0.66f * i;
+            rainbowRoad.GetChild(i).GetComponent<Renderer>().material.SetFloat("_Distance", d + delta);
+        }
     }
 
 }
